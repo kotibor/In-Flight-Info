@@ -2,4 +2,4 @@
 
 
 ## Concept
-![concept](concept.jpg)
+![concept](concept.JPG)
