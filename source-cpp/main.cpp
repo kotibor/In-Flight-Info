@@ -17,7 +17,7 @@ int main()
 	string line;
 
 	ifstream inFile;
-	inFile.open("TEST_flight_database.txt");		// TODO: does .txt do the job???
+	inFile.open("TEST_DB.txt");		// TODO: does .txt do the job???
 	if (!inFile)
 	{
 		cerr << "ERROR::FILE::UNABLE_TO_OPEN";
@@ -31,7 +31,7 @@ int main()
 		getline(cin, airline);
 		cout << "Enter the flight number: ";
 		getline(cin, flightNo);
-	
+
 		// test for valid input
 		// TODO: implement it
 		if (true)
@@ -48,8 +48,24 @@ int main()
 						// if the current line of the file equals the flight number the user entered
 						if (line == flightNo)
 						{
-							cout << "Found flight!\n";
+							cout << "---------" << endl;
+							cout << airline << " " << flightNo << endl;
+							// only print a set amount of lines after the selected (found) flight
+							for (int lineNo = 0; getline(inFile, line) && lineNo < 3; lineNo++)
+							{
+								cout << line << endl;
+							}
 						}
+						// doesn't work yet because it checks all the lines in the database and
+						// not the current one
+						/*
+						else
+						{
+							cout << "---------" << endl;
+							cout << "Sorry, the flight that you searched for does not exist. Please try again." << endl;
+							return(0);
+						}
+						*/
 					}
 				}
 			}

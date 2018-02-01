@@ -1,0 +1,14 @@
+Jetstar
+JQ110
+Origin: Perth			Departure Time: 6:00am
+Destination: Denpasar	Arrival Time: 10:30am
+
+Qantas
+QF202
+Origin: Brisbane		Departure Time: 12:55pm
+Destination: Sydney		Arrival Time: 14:25pm
+
+Test Airlines
+TA999
+Origin: Test City		Departure Time: 7:15am
+Destination: Test		Arrival Time: 11:00am
